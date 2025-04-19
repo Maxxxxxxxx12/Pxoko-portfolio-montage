@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pxoko video editor</title>
+  <style>
+    /* Reset & base */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #121212;
+      color: #f1f1f1;
+      line-height: 1.6;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    header {
+      background: linear-gradient(90deg, #6a11cb, #fc25d8);
+      padding: 2rem;
+      text-align: center;
+      animation: fadeIn 2s ease-out;
+    }
+
+    header h1 {
+      font-size: 2.8rem;
+      margin-bottom: 0.5rem;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      color: #e0e0e0;
+    }
+
+    .section {
+      max-width: 1100px;
+      margin: auto;
+      padding: 3rem 2rem;
+      animation: fadeInUp 1.5s ease forwards;
+    }
+
+    .section h2 {
+      font-size: 2rem;
+      color: #9827cc;
+      margin-bottom: 1rem;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+      margin-top: 2rem;
+    }
+
+    .video-card {
+      background-color: #1e1e1e;
+      border-radius: 10px;
+      overflow: hidden;
+      transition: transform 0.3s ease, box-shadow 0.3s;
+      cursor: pointer;
+    }
+
+    .video-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+    }
+
+    .video-card video, .video-card img {
+      width: 100%;
+      display: block;
+    }
+
+    .video-card .info {
+      padding: 1rem;
+    }
+
+    .video-card .info h3 {
+      margin-bottom: 0.5rem;
+      font-size: 1.1rem;
+      color: #ffffff;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      background-color: #1c1c1c;
+      margin-top: 2rem;
+    }
+
+    footer p {
+      color: #aaa;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(40px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2rem;
+      }
+      .video-card .info h3 {
+        font-size: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Pxoko Video Editor Portfolio</h1>
+    <p>Découvrez mes créations & montages dynamiques</p>
+  </header>
+
+
+  <section class="section" id="clients">
+    <h2>Mes Clients</h2>
+    <div class="clients-logos">
+      <a href="https://www.youtube.com/@Hochy" class="Hochy" target="_blank">
+        <img src="Images/Hochy pp.jpg" alt="Hochy">
+      </a>
+      <a href="https://www.youtube.com/@seyko_1858" class="client-card" target="_blank">
+        <img src="Images/Seyko pp.jpg" alt="Seyko">
+      </a>
+      <a href="https://www.youtube.com/@CITlevrai" class="client-card" target="_blank">
+        <img src="Images/CIT pp.jpg" alt="CIT">
+      </a>
+      <a href="https://x.com/HedraFn" class="client-card" target="_blank">
+        <img src="Images/Hedra pp.jpg" alt="Hedra">
+      </a>
+      <a href="https://x.com/Pixovsky_" class="client-card" target="_blank">
+        <img src="Images/Pixovsky pp.png" alt="Pixovsky">
+      </a>
+  <a href="https://www.youtube.com/@Lixium" class="client-card" target="_blank">
+    <img src="Images/Lixium pp.png" alt="Lixium">
+  </a>
+</a>
+<a href="https://x.com/ohLaynnn" class="client-card" target="_blank">
+  <img src="Images/Ohlaynn pp.jpg" alt="Ohlaynn">
+</a>
+</a>
+<a href="https://www.youtube.com/@sigma3xfn" class="client-card" target="_blank">
+  <img src="Images/Sigma3x pp.png" alt="Sigma3x">
+</a>
+<a href="https://www.youtube.com/@zocian1" class="client-card" target="_blank">
+  <img src="Images/Zocian pp.jpg" alt="Zocian">
+</a>
+<a href="https://x.com/EvozAEsport" class="client-card" target="_blank">
+  <img src="Images/Evoza pp.png" alt="evoza">
+</a>
+<a href="https://x.com/2R_Esport" class="client-card" target="_blank">
+  <img src="Images/2r pp.png" alt="2r">
+</a>
+<a href="https://www.youtube.com/@ArtM_TV" class="client-card" target="_blank">
+  <img src="Images/artm pp.jpg" alt="Artm">
+</a>
+    </div>
+  </section>
+  </div>  
+  <section class="section" id="realisations">
+    <h2>Mes Réalisations</h2>
+    <div class="gallery">
+      <div class="video-card">
+        <video controls poster="Images/Miniature maxseem content.jpg">
+          <source src="Videos/Content.mp4" type="video/mp4" />
+          Votre navigateur ne supporte pas la lecture vidéo.
+        </video>
+        <div class="info">
+          <h3>Video content
+          
+          </h3>
+        </div>
+      </div>
+
+      <div class="video-card">
+        <video controls poster="">
+            <source src="Videos/g8_pir_V1.mp4" />
+            Votre navigateur ne supporte pas la lecture vidéo.
+          </video>
+          <div class="info">
+          <h3>Annonce joueur</h3>
+        </div>
+      </div>
+
+      <div class="video-card">
+        <img src="" alt="" />
+        <video controls poster="Images/Minia neytox .jpg">
+            <source src="Videos/train_port.mp4" />
+            Votre navigateur ne supporte pas la lecture vidéo.
+          </video><div class="info">
+          <h3>Résumé cup</h3>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>
+</div>
+  <section class="section" id="tarifs">
+    <h2>Mes Prix</h2>
+    <div class="pricing-cards">
+      <div class="price-card">
+        <h3>🎬 Highlight</h3>
+        <p class="price">10€</p>
+        <ul>
+          <li>Montage rapide et dynamique (≤ 3,5 min)</li>
+          <li>Miniature comprise</li>
+          <li>Livraison en 2 jours </li>
+        </ul>
+      </div>
+      <div class="price-card highlight">
+        <h3>🔥 Annonce joueurs</h3>
+        <p class="price">30€</p>
+        <ul>
+          <li>Montage dynamique et avec des effets plus poussés (≤ 3 min)</li>
+          <li>Intro 3d / irl</li>
+          <li>Livraison rapide</li>
+        </ul>
+      </div>
+      <div class="price-card">
+        <h3>🚀 Vidéo content</h3>
+        <p class="price">35-50€</p>
+        <ul>
+          <li>Montage vidéo longue et dynamique (jusqu'à 20 min)</li>
+          <li>Effets avancés + sound design</li>
+          <li>Livraison rapide</li>
+        </ul>
+      </div>
+      <div class="price-card">
+        <h3>🏆 Résumé cup</h3>
+        <p class="price">7€</p>
+        <ul>
+          <li>Montage vidéo longue et dynamique (jusqu'à 30 min)</li>
+          <li>Livraison rapide</li>
+    </div>
+  </section>
+  <section class="section" id="contact">
+    <h2>Contact</h2>
+    <p>📧 Email : editingpxoko@gmail.com</p>
+    <a href="https://twitter.com/pxokovfx" target="_blank" class="twitter-btn">
+      <p style="color: #007BFF;">📱 Me contacter sur Twitter!</p>
+
+    </a>
+  </section>
+  <footer>
+    <p>&copy; 2025 Portfolio de Montage Vidéo - Tous droits réservés.</p>
